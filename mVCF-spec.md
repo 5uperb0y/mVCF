@@ -14,7 +14,7 @@ mVCF is formatted in plain text for ease of use and accessibility. It consists o
 
 - Entry lines: These lines contain the core data of the mVCF file. Each entry line details a specific event at a given point in time (position) across different universes or timelines. The format of these lines allows for a clear depiction of how events in various timelines deviate from the standard or reference timeline. The entry lines are tab-separated, ensuring organized and readable data representation.
 
-In mVCF, zero-length fields are not permitted. Instead, a dot (.) is used to represent the absence of data or a null value. This approach ensures that every field in the mVCF file contains meaningful information or a clear indication of missing data.
+In mVCF, zero-length fields are not permitted. Instead, a dot (`.`) is used to represent the absence of data or a null value. This approach ensures that every field in the mVCF file contains meaningful information or a clear indication of missing data.
 
 ## An example
 ```
@@ -65,5 +65,5 @@ All entry lines are tab-delimited with no tab character at the end of the line. 
 - **REF (reference event)**: the expected event at the given time point in the standard timeline, encoded using a predefined single-character system for brevity and standardization.
 - **ALT (alternate event)**:  the event or state in the alternate universe or timeline that diverges from the standard reference.
 - **QUAL (quality)**: quantiy score assessing the reliability of the alternate event assertion made in ALT.
-- **FILTER (filter status)**:  filtering status of each event. 'PASS' denotes that the event has met all filtering criteria, while a semicolon-separated list of failed filter codes is provided for events not passing all filters.
+- **FILTER (filter status)**:  filtering status of each event. "PASS" denotes that the event has met all filtering criteria, while a semicolon-separated list of failed filter codes is provided for events not passing all filters.
 - **INFO (additional information)**: extended information in a key-value pair format, separated by semicolons. This field is adaptable for including diverse additional data relevant to the event, such as bibliographic references or descriptive annotations.
